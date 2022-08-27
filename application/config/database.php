@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '10.1.1.103',
-	'username' => 'ipung',
-	'password' => 'Q6u?AkV^=T2WyL$t',
-	'database' => 'tpsonline_mau',
+	'hostname' => getenv('DB_HOST'),
+	'username' => getenv('DB_USERNAME'),
+	'password' => getenv('DB_PASSWORD'),
+	'database' => getenv('DB_NAME'),
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
